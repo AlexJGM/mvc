@@ -1,6 +1,5 @@
-+<?php
+<?php
 namespace Model;
-
 class Usuario
 {
 

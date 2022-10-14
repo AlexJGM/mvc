@@ -23,5 +23,17 @@ class M_Usuario extends Conexion
         $sentencia->execute();
         $sentencia->close();
     }
+    
+    
+    public function eliminarUsuario($username) {
+        $sentencia = parent::con()->prepare("DELETE FROM usuarios WHERE username='".$username."'");
+       echo "DELETE FROM usuarios WHERE username=" .$username . "'";
+       $sentencia->execute();
+       $sentencia->close();
+    }
+    
+    public function modificarUsuario(Usuario $usuario) {
+        
+    }
 }
 

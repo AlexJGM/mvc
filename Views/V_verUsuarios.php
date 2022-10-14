@@ -20,10 +20,13 @@
    			    echo "<tr>";
    			    echo "<td>" . $usuario['username'] . "</td>";
    			    echo "<td>" . $usuario['password'] . "</td>";
-   			    echo "<td>" . $usuario['nombre'] . "</td>";
+   			    echo "<td>" . $usuario['nombre'] . "</td>"; 
+   			    echo  '<td><a href="">Modificar</a></td>';
+   			    echo   '<td> <a href="C_eliminarUsuario.php?username=' . $usuario['username'] .'"><button>Eliminar</button></a></td>'; 
    			    echo "</tr>";
    			}
    			?>
+   		
    			</tbody>
    		</table>
     </body>
